@@ -4,6 +4,7 @@
   const hero = document.querySelector('.hero');
   const header = document.querySelector('.site-header');
   const typeText = document.querySelector('.type-text');
+  const compactViewport = window.matchMedia('(max-width: 920px)');
 
   body.classList.add('motion-ready');
 
@@ -75,12 +76,12 @@
   let frameRequested = false;
   const updateHeroMotion = () => {
     frameRequested = false;
+    header?.classList.toggle('is-scrolled', window.scrollY > 24);
     if (!hero || reduceMotion.matches) {
       hero?.style.removeProperty('--hero-copy-opacity');
       hero?.style.removeProperty('--hero-copy-shift');
       hero?.style.removeProperty('--hero-board-opacity');
       hero?.style.removeProperty('--hero-board-shift');
-      if (header) header.style.removeProperty('opacity');
       return;
     }
 
@@ -88,9 +89,8 @@
     const progress = Math.min(Math.max(window.scrollY / distance, 0), 1);
     hero.style.setProperty('--hero-copy-opacity', String(1 - progress * 0.9));
     hero.style.setProperty('--hero-copy-shift', `${progress * -42}px`);
-    hero.style.setProperty('--hero-board-opacity', String(1 - progress * 0.68));
-    hero.style.setProperty('--hero-board-shift', `${progress * 58}px`);
-    if (header) header.style.opacity = String(Math.max(1 - progress * 1.5, 0));
+    hero.style.setProperty('--hero-board-opacity', compactViewport.matches ? '1' : String(1 - progress * 0.68));
+    hero.style.setProperty('--hero-board-shift', `${progress * (compactViewport.matches ? 12 : 58)}px`);
   };
 
   const requestHeroMotion = () => {
@@ -105,6 +105,7 @@
     if (reduceMotion.matches) showAll();
     requestHeroMotion();
   });
+  compactViewport.addEventListener?.('change', requestHeroMotion);
 
   typeHeroLine();
   requestHeroMotion();
