@@ -9,17 +9,13 @@
   body.classList.add('motion-ready');
 
   const revealGroups = [
-    { selector: '.manifesto > div:not(.manifesto-visual)', direction: 'left' },
-    { selector: '.manifesto-visual', direction: 'right' },
     { selector: '.section-intro > *', direction: 'up' },
     { selector: '.service-item', direction: 'up', step: 90 },
+    { selector: '.service-more', direction: 'up' },
     { selector: '.work-heading > *', direction: 'up' },
     { selector: '.browser-mockup', direction: 'left' },
     { selector: '.work-meta', direction: 'right' },
-    { selector: '.process-heading > *', direction: 'left' },
-    { selector: '.process-list li', direction: 'right', step: 85 },
-    { selector: '.contact-inner > *', direction: 'up', step: 70 },
-    { selector: '.footer > *', direction: 'up', step: 55 }
+    { selector: '.contact-inner > *', direction: 'up', step: 70 }
   ];
 
   const revealElements = [];
@@ -47,9 +43,12 @@
     showAll();
   }
 
+  let typingRun = 0;
   const typeHeroLine = () => {
     if (!typeText) return;
+    const run = ++typingRun;
     const content = typeText.dataset.type || typeText.textContent;
+    typeText.classList.remove('is-typing');
     if (reduceMotion.matches) {
       typeText.textContent = content;
       return;
@@ -61,6 +60,7 @@
     let index = 0;
 
     const typeNext = () => {
+      if (run !== typingRun) return;
       typeText.textContent += characters[index];
       index += 1;
       if (index < characters.length) {
@@ -106,6 +106,7 @@
     requestHeroMotion();
   });
   compactViewport.addEventListener?.('change', requestHeroMotion);
+  document.addEventListener('sfs:languagechange', typeHeroLine);
 
   typeHeroLine();
   requestHeroMotion();
