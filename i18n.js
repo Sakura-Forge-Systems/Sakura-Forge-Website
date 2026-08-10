@@ -5,7 +5,7 @@
       meta_description: "Sakura Forge Systemsは、Webサイト制作・既存サイト改善・AI業務改善ツールの提案・動画編集など、多様な制作案件に対応します。",
       og_description: "Web制作、既存サイト改善、AIを使った業務改善、動画編集まで。必要な技術を組み合わせて形にします。",
       skip: "本文へ移動", nav_aria: "メインナビゲーション", nav_services: "できること", nav_work: "制作見本", nav_contact: "相談する", language_label: "言語を選択",
-      hero_status: "法人", hero_scope: "Web制作・AI業務改善・動画編集", hero_title_top: "新しい技術で、", hero_title_typed: "価値を創出。", hero_title_aria: "新しい技術で、価値を創出。",
+      hero_scope: "Web制作・AI業務改善・動画編集", hero_title_top: "新しい技術で、", hero_title_typed: "価値を創出。", hero_title_aria: "新しい技術で、価値を創出。",
       hero_lead: "サイト制作からAIを使った業務改善、動画編集まで。目的に合わせて必要な技術を組み合わせ、日々の仕事で使える形へ仕上げます。", hero_cta: "案件について相談する", hero_services_link: "できることを見る",
       hero_board_aria: "Sakura Forge Systemsの制作イメージ", hero_board_materials: "言葉、設計、コード。", hero_board_build: "ひとつの画面へ組み上げる。",
       services_tag: "できること", services_title_top: "事業の輪郭に合わせて、", services_title_bottom: "最適解を提供します。", services_lead: "制作内容を決まった型へ押し込まず、目的と運用方法から逆算します。",
@@ -21,7 +21,7 @@
     en: {
       meta_title: "Sakura Forge Systems | Web, AI & Video Solutions", meta_description: "Sakura Forge Systems provides website creation, site improvements, AI workflow tools, video editing, and more.", og_description: "Websites, site improvements, AI workflow solutions, and video editing—combined around your goals.",
       skip: "Skip to content", nav_aria: "Main navigation", nav_services: "Services", nav_work: "Work", nav_contact: "Contact", language_label: "Choose language",
-      hero_status: "REGISTERED COMPANY", hero_scope: "Web · AI workflow · Video", hero_title_top: "New technology.", hero_title_typed: "New value.", hero_title_aria: "Create new value with new technology.",
+      hero_scope: "Web · AI workflow · Video", hero_title_top: "New technology.", hero_title_typed: "New value.", hero_title_aria: "Create new value with new technology.",
       hero_lead: "From websites and AI-powered workflow improvements to video editing, we combine the right technologies and turn them into practical tools for your business.", hero_cta: "Discuss a project", hero_services_link: "View services",
       hero_board_aria: "Sakura Forge Systems production concept", hero_board_materials: "Words, design, code.", hero_board_build: "Built into one clear experience.",
       services_tag: "Services", services_title_top: "Shaped around your business.", services_title_bottom: "Built for the right outcome.", services_lead: "We start with your goals and workflow, not a fixed package.",
@@ -37,7 +37,7 @@
     "zh-CN": {
       meta_title: "Sakura Forge Systems｜网站、AI与视频解决方案", meta_description: "提供网站制作、现有网站优化、AI业务改善工具提案、视频剪辑等多种服务。", og_description: "从网站制作、网站优化到AI业务改善与视频剪辑，为目标组合合适的技术。",
       skip: "跳到正文", nav_aria: "主导航", nav_services: "服务内容", nav_work: "案例", nav_contact: "咨询", language_label: "选择语言",
-      hero_status: "已登记法人", hero_scope: "网站制作・AI业务改善・视频剪辑", hero_title_top: "以新技术，", hero_title_typed: "创造新价值。", hero_title_aria: "以新技术创造新价值。",
+      hero_scope: "网站制作・AI业务改善・视频剪辑", hero_title_top: "以新技术，", hero_title_typed: "创造新价值。", hero_title_aria: "以新技术创造新价值。",
       hero_lead: "从网站制作、AI业务改善到视频剪辑，我们根据目标组合合适的技术，并将其打造为真正可用于日常业务的成果。", hero_cta: "咨询项目", hero_services_link: "查看服务",
       hero_board_aria: "Sakura Forge Systems 制作理念", hero_board_materials: "文字、设计、代码。", hero_board_build: "整合为清晰的体验。",
       services_tag: "服务内容", services_title_top: "贴合业务特点，", services_title_bottom: "提供最优解决方案。", services_lead: "不套用固定模板，而是从目标和运营方式出发进行规划。",
@@ -53,7 +53,7 @@
     "zh-TW": {
       meta_title: "Sakura Forge Systems｜網站、AI與影片解決方案", meta_description: "提供網站製作、現有網站改善、AI業務改善工具提案、影片剪輯等多元服務。", og_description: "從網站製作、網站改善到AI業務優化與影片剪輯，依目標組合適合的技術。",
       skip: "跳至主要內容", nav_aria: "主要導覽", nav_services: "服務內容", nav_work: "作品案例", nav_contact: "諮詢", language_label: "選擇語言",
-      hero_status: "已登記法人", hero_scope: "網站製作・AI業務改善・影片剪輯", hero_title_top: "運用新技術，", hero_title_typed: "創造新價值。", hero_title_aria: "運用新技術創造新價值。",
+      hero_scope: "網站製作・AI業務改善・影片剪輯", hero_title_top: "運用新技術，", hero_title_typed: "創造新價值。", hero_title_aria: "運用新技術創造新價值。",
       hero_lead: "從網站製作、AI業務改善到影片剪輯，我們依照目標組合合適的技術，打造真正能用於日常工作的成果。", hero_cta: "諮詢專案", hero_services_link: "查看服務",
       hero_board_aria: "Sakura Forge Systems 製作理念", hero_board_materials: "文字、設計、程式碼。", hero_board_build: "整合成清楚的體驗。",
       services_tag: "服務內容", services_title_top: "貼合事業輪廓，", services_title_bottom: "提供最佳解決方案。", services_lead: "不套用固定範本，而是從目的與營運方式反向規劃。",
@@ -69,7 +69,7 @@
     ko: {
       meta_title: "Sakura Forge Systems | 웹·AI·영상 솔루션", meta_description: "웹사이트 제작, 기존 사이트 개선, AI 업무 개선 도구 제안, 영상 편집 등 다양한 프로젝트를 지원합니다.", og_description: "웹 제작부터 AI 업무 개선과 영상 편집까지, 목적에 맞는 기술을 조합합니다.",
       skip: "본문으로 이동", nav_aria: "주요 탐색", nav_services: "서비스", nav_work: "제작 사례", nav_contact: "문의", language_label: "언어 선택",
-      hero_status: "등록 법인", hero_scope: "웹 제작・AI 업무 개선・영상 편집", hero_title_top: "새로운 기술로,", hero_title_typed: "가치를 만듭니다.", hero_title_aria: "새로운 기술로 가치를 만듭니다.",
+      hero_scope: "웹 제작・AI 업무 개선・영상 편집", hero_title_top: "새로운 기술로,", hero_title_typed: "가치를 만듭니다.", hero_title_aria: "새로운 기술로 가치를 만듭니다.",
       hero_lead: "웹사이트 제작부터 AI를 활용한 업무 개선과 영상 편집까지, 목적에 맞는 기술을 조합해 실제 업무에 쓰이는 결과물로 완성합니다.", hero_cta: "프로젝트 상담", hero_services_link: "서비스 보기",
       hero_board_aria: "Sakura Forge Systems 제작 이미지", hero_board_materials: "언어, 설계, 코드.", hero_board_build: "하나의 명확한 화면으로 완성합니다.",
       services_tag: "서비스", services_title_top: "사업의 모습에 맞춰,", services_title_bottom: "최적의 해답을 제공합니다.", services_lead: "정해진 틀에 맞추지 않고 목적과 운영 방식에서 역산합니다.",
@@ -85,7 +85,7 @@
     es: {
       meta_title: "Sakura Forge Systems | Soluciones web, IA y vídeo", meta_description: "Creamos sitios web, mejoramos webs existentes, proponemos herramientas de IA y editamos vídeo.", og_description: "Web, mejora de procesos con IA y edición de vídeo, combinados según tus objetivos.",
       skip: "Ir al contenido", nav_aria: "Navegación principal", nav_services: "Servicios", nav_work: "Proyectos", nav_contact: "Contacto", language_label: "Elegir idioma",
-      hero_status: "EMPRESA REGISTRADA", hero_scope: "Web · IA para procesos · Vídeo", hero_title_top: "Nueva tecnología.", hero_title_typed: "Nuevo valor.", hero_title_aria: "Creamos nuevo valor con nueva tecnología.",
+      hero_scope: "Web · IA para procesos · Vídeo", hero_title_top: "Nueva tecnología.", hero_title_typed: "Nuevo valor.", hero_title_aria: "Creamos nuevo valor con nueva tecnología.",
       hero_lead: "Desde sitios web y mejoras de procesos con IA hasta edición de vídeo: combinamos la tecnología adecuada y la convertimos en soluciones útiles para tu negocio.", hero_cta: "Hablar de un proyecto", hero_services_link: "Ver servicios",
       hero_board_aria: "Concepto de producción de Sakura Forge Systems", hero_board_materials: "Palabras, diseño, código.", hero_board_build: "Todo unido en una experiencia clara.",
       services_tag: "Servicios", services_title_top: "Adaptados a tu negocio.", services_title_bottom: "La solución adecuada.", services_lead: "Partimos de tus objetivos y tu forma de trabajar, no de un paquete cerrado.",
@@ -101,7 +101,7 @@
     fr: {
       meta_title: "Sakura Forge Systems | Solutions web, IA et vidéo", meta_description: "Création et amélioration de sites web, outils IA pour les processus, montage vidéo et autres projets.", og_description: "Web, amélioration des processus par l’IA et montage vidéo, combinés selon vos objectifs.",
       skip: "Aller au contenu", nav_aria: "Navigation principale", nav_services: "Services", nav_work: "Réalisations", nav_contact: "Contact", language_label: "Choisir la langue",
-      hero_status: "SOCIÉTÉ IMMATRICULÉE", hero_scope: "Web · IA métier · Vidéo", hero_title_top: "Nouvelle technologie.", hero_title_typed: "Nouvelle valeur.", hero_title_aria: "Créer une nouvelle valeur grâce aux nouvelles technologies.",
+      hero_scope: "Web · IA métier · Vidéo", hero_title_top: "Nouvelle technologie.", hero_title_typed: "Nouvelle valeur.", hero_title_aria: "Créer une nouvelle valeur grâce aux nouvelles technologies.",
       hero_lead: "Des sites web à l’amélioration des processus par l’IA et au montage vidéo, nous combinons les bonnes technologies pour créer des solutions utiles au quotidien.", hero_cta: "Parler d’un projet", hero_services_link: "Voir les services",
       hero_board_aria: "Concept de production Sakura Forge Systems", hero_board_materials: "Mots, design, code.", hero_board_build: "Réunis dans une expérience claire.",
       services_tag: "Services", services_title_top: "Pensés pour votre activité.", services_title_bottom: "La solution la plus juste.", services_lead: "Nous partons de vos objectifs et de votre fonctionnement, jamais d’une formule imposée.",
@@ -117,7 +117,7 @@
     ru: {
       meta_title: "Sakura Forge Systems | Веб, ИИ и видео", meta_description: "Создание и улучшение сайтов, ИИ-инструменты для бизнеса, видеомонтаж и другие проекты.", og_description: "Сайты, улучшение процессов с ИИ и видеомонтаж — технологии под ваши цели.",
       skip: "Перейти к содержимому", nav_aria: "Основная навигация", nav_services: "Услуги", nav_work: "Работы", nav_contact: "Связаться", language_label: "Выбрать язык",
-      hero_status: "ЗАРЕГИСТРИРОВАННАЯ КОМПАНИЯ", hero_scope: "Веб · ИИ для процессов · Видео", hero_title_top: "Новые технологии.", hero_title_typed: "Новая ценность.", hero_title_aria: "Создаём новую ценность с помощью новых технологий.",
+      hero_scope: "Веб · ИИ для процессов · Видео", hero_title_top: "Новые технологии.", hero_title_typed: "Новая ценность.", hero_title_aria: "Создаём новую ценность с помощью новых технологий.",
       hero_lead: "От сайтов и улучшения процессов с помощью ИИ до видеомонтажа — мы подбираем технологии и превращаем их в практичные решения для вашего бизнеса.", hero_cta: "Обсудить проект", hero_services_link: "Посмотреть услуги",
       hero_board_aria: "Концепция работы Sakura Forge Systems", hero_board_materials: "Слова, дизайн, код.", hero_board_build: "Собираем в единый понятный продукт.",
       services_tag: "Услуги", services_title_top: "Под задачи вашего бизнеса.", services_title_bottom: "Оптимальное решение.", services_lead: "Мы отталкиваемся от целей и рабочих процессов, а не от готового шаблона.",
@@ -133,7 +133,7 @@
     vi: {
       meta_title: "Sakura Forge Systems | Giải pháp Web, AI và Video", meta_description: "Thiết kế và cải thiện website, công cụ AI tối ưu công việc, biên tập video và nhiều dự án khác.", og_description: "Web, cải tiến quy trình bằng AI và biên tập video—kết hợp theo mục tiêu của bạn.",
       skip: "Đi đến nội dung", nav_aria: "Điều hướng chính", nav_services: "Dịch vụ", nav_work: "Dự án", nav_contact: "Liên hệ", language_label: "Chọn ngôn ngữ",
-      hero_status: "DOANH NGHIỆP ĐÃ ĐĂNG KÝ", hero_scope: "Web · AI cho công việc · Video", hero_title_top: "Công nghệ mới.", hero_title_typed: "Giá trị mới.", hero_title_aria: "Tạo ra giá trị mới bằng công nghệ mới.",
+      hero_scope: "Web · AI cho công việc · Video", hero_title_top: "Công nghệ mới.", hero_title_typed: "Giá trị mới.", hero_title_aria: "Tạo ra giá trị mới bằng công nghệ mới.",
       hero_lead: "Từ website, cải tiến quy trình bằng AI đến biên tập video, chúng tôi kết hợp công nghệ phù hợp thành giải pháp hữu ích cho công việc hằng ngày.", hero_cta: "Trao đổi dự án", hero_services_link: "Xem dịch vụ",
       hero_board_aria: "Ý tưởng sản xuất của Sakura Forge Systems", hero_board_materials: "Ngôn từ, thiết kế, mã nguồn.", hero_board_build: "Kết hợp thành một trải nghiệm rõ ràng.",
       services_tag: "Dịch vụ", services_title_top: "Phù hợp với doanh nghiệp.", services_title_bottom: "Cung cấp giải pháp tối ưu.", services_lead: "Chúng tôi bắt đầu từ mục tiêu và cách vận hành, không ép dự án vào một khuôn cố định.",
@@ -149,7 +149,7 @@
     hi: {
       meta_title: "Sakura Forge Systems | वेब, AI और वीडियो समाधान", meta_description: "वेबसाइट निर्माण, मौजूदा साइट सुधार, AI कार्य-प्रवाह उपकरण, वीडियो संपादन और अन्य परियोजनाएँ।", og_description: "वेब, AI से कार्य सुधार और वीडियो संपादन—आपके लक्ष्य के अनुसार सही तकनीक।",
       skip: "मुख्य सामग्री पर जाएँ", nav_aria: "मुख्य नेविगेशन", nav_services: "सेवाएँ", nav_work: "कार्य", nav_contact: "संपर्क", language_label: "भाषा चुनें",
-      hero_status: "पंजीकृत कंपनी", hero_scope: "वेब · AI कार्य सुधार · वीडियो", hero_title_top: "नई तकनीक।", hero_title_typed: "नया मूल्य।", hero_title_aria: "नई तकनीक से नया मूल्य बनाएँ।",
+      hero_scope: "वेब · AI कार्य सुधार · वीडियो", hero_title_top: "नई तकनीक।", hero_title_typed: "नया मूल्य।", hero_title_aria: "नई तकनीक से नया मूल्य बनाएँ।",
       hero_lead: "वेबसाइट और AI आधारित कार्य-सुधार से लेकर वीडियो संपादन तक, हम सही तकनीकों को मिलाकर आपके व्यवसाय के लिए उपयोगी समाधान बनाते हैं।", hero_cta: "परियोजना पर बात करें", hero_services_link: "सेवाएँ देखें",
       hero_board_aria: "Sakura Forge Systems निर्माण अवधारणा", hero_board_materials: "शब्द, डिज़ाइन, कोड।", hero_board_build: "एक स्पष्ट अनुभव में संयोजित।",
       services_tag: "सेवाएँ", services_title_top: "आपके व्यवसाय के अनुरूप।", services_title_bottom: "सबसे उपयुक्त समाधान।", services_lead: "हम तय पैकेज से नहीं, आपके लक्ष्य और काम करने के तरीके से शुरुआत करते हैं।",

@@ -408,5 +408,5 @@ description案:
 ## 関連リポジトリ
 
 - 会社設立・事業準備: `Sakura-Forge-Systems/Sakura-Forge-Systems`
-- 営業・ポートフォリオ用サンプルHP: `Sakura-Forge-Systems/Sakura-Forge-Samples`
+- 営業・ポートフォリオ用サンプルHP: このリポジトリの `/samples/` 配下
 - 会社・事業サイト: `Sakura-Forge-Systems/Sakura-Forge-Website`

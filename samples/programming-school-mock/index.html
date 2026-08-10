@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="小学1年生から6年生のための、つくって試して伝えるプログラミングクラブ。">
+  <title>ひらめきコードクラブ | 小学生のプログラミング教室</title>
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <style>
+    :root { --ink:#17235a; --blue:#72cde8; --yellow:#ffdc57; --pink:#f488a9; --cream:#fffaf0; --muted:#526087; font-family:"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; overflow-x:hidden; color:var(--ink); background:var(--cream); }
+    a { color:inherit; }
+    .skip { position:fixed; z-index:20; top:10px; left:10px; padding:10px 14px; color:#fff; background:var(--ink); transform:translateY(-150%); }
+    .skip:focus { transform:translateY(0); }
+    .head { position:absolute; z-index:4; top:0; right:0; left:0; display:flex; align-items:center; justify-content:space-between; width:min(100% - 44px, 1240px); margin:auto; padding:22px 0; color:#fff; }
+    .brand { font-weight:900; letter-spacing:.04em; text-decoration:none; }
+    .nav { display:flex; gap:25px; font-size:.82rem; font-weight:800; }
+    .nav a { text-decoration:none; }
+    .nav a:hover { text-decoration:underline; text-underline-offset:5px; }
+    .hero { position:relative; overflow:hidden; color:#fff; background:var(--ink); }
+    .hero::before, .hero::after { position:absolute; border-radius:50%; content:""; }
+    .hero::before { top:-160px; left:-108px; width:450px; height:450px; background:var(--pink); }
+    .hero::after { right:-115px; bottom:-115px; width:390px; height:390px; background:var(--yellow); }
+    .hero-grid { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0, 1fr) minmax(350px, .9fr); align-items:end; gap:70px; width:min(100% - 44px, 1240px); min-height:780px; margin:auto; }
+    .hero-copy { align-self:center; padding-top:60px; }
+    .tag { display:inline-block; margin:0; padding:8px 12px; border-radius:100px; color:var(--ink); background:var(--yellow); font-size:.73rem; font-weight:900; letter-spacing:.04em; }
+    h1 { margin:20px 0 18px; font-size:clamp(3rem, 5.15vw, 5.25rem); line-height:1.14; letter-spacing:-.07em; }
+    h1 span { display:block; white-space:nowrap; }
+    h1 span:last-child { color:var(--yellow); }
+    .hero-copy > p:last-of-type { max-width:31rem; margin:0; font-weight:700; line-height:2; }
+    .button { display:inline-flex; align-items:center; gap:10px; margin-top:25px; padding:15px 20px; border:0; border-radius:12px; color:#fff; background:var(--pink); box-shadow:0 5px #bd5b79; font:inherit; font-size:.9rem; font-weight:900; text-decoration:none; }
+    .button::after { content:"→"; font-size:1.2em; }
+    .button:hover { transform:translateY(-2px); box-shadow:0 7px #bd5b79; }
+    .hero-photo { position:relative; z-index:1; margin:0 0 62px; }
+    .hero-photo img { display:block; width:100%; border:10px solid #fff; border-radius:30px; box-shadow:15px 15px var(--blue); transform:rotate(3deg); }
+    .photo-badge { position:absolute; top:-26px; right:-16px; display:grid; place-items:center; width:98px; aspect-ratio:1; border-radius:50%; color:var(--ink); background:var(--yellow); font-size:.78rem; font-weight:900; line-height:1.45; text-align:center; transform:rotate(8deg); }
+    .section { padding:clamp(74px, 10vw, 126px) max(22px, calc((100vw - 1120px)/2)); }
+    .intro { display:grid; grid-template-columns:.72fr 1.28fr; gap:72px; }
+    .eyebrow { margin:0; color:var(--pink); font-size:.74rem; font-weight:900; letter-spacing:.08em; }
+    h2 { margin:15px 0 18px; font-size:clamp(2.25rem, 4.5vw, 4.65rem); line-height:1.18; letter-spacing:-.065em; }
+    .intro .body { max-width:650px; margin:0; color:var(--muted); font-weight:700; line-height:2; }
+    .steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; padding:48px max(22px, calc((100vw - 1120px)/2)) 78px; background:var(--blue); }
+    .step { min-height:304px; padding:28px 30px 30px; border-radius:25px; background:#fff; box-shadow:0 8px #4faabe; }
+    .step:nth-child(2) { transform:translateY(30px); }
+    .step-top { display:flex; align-items:flex-start; justify-content:space-between; }
+    .number { display:grid; place-items:center; width:40px; height:40px; border-radius:50%; color:var(--ink); background:var(--yellow); font-size:.86rem; font-weight:900; }
+    .step-icon { width:80px; height:80px; color:var(--ink); }
+    .step-icon .accent { fill:var(--pink); stroke:var(--ink); }
+    .step-icon .fill-yellow { fill:var(--yellow); stroke:var(--ink); }
+    .step-icon .line { fill:none; stroke:currentColor; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+    .step h3 { margin:22px 0 10px; font-size:1.25rem; }
+    .step p { margin:0; color:var(--muted); font-size:.92rem; font-weight:700; line-height:1.8; }
+    .gallery { display:grid; grid-template-columns:1.07fr .93fr; overflow:hidden; background:var(--pink); color:#fff; }
+    .gallery-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(54px, 8vw, 108px); }
+    .gallery-copy .eyebrow { color:#fff; }
+    .gallery-copy p:last-child { max-width:30rem; margin:0; font-weight:700; line-height:2; }
+    .photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:22px 22px 22px 0; }
+    .photo-grid figure { min-height:250px; margin:0; overflow:hidden; border-radius:20px; background:#d6eef6; }
+    .photo-grid figure:first-child { grid-column:span 2; min-height:295px; }
+    .photo-grid img { display:block; width:100%; height:100%; object-fit:cover; }
+    .make { display:grid; grid-template-columns:1fr 1fr; gap:clamp(35px, 7vw, 94px); align-items:center; }
+    .make-picture { position:relative; margin:0; }
+    .make-picture img { display:block; width:100%; border-radius:24px; box-shadow:13px 13px var(--yellow); }
+    .make-picture figcaption { position:absolute; right:-12px; bottom:-22px; padding:10px 13px; border-radius:10px; color:#fff; background:var(--ink); font-size:.78rem; font-weight:900; transform:rotate(-3deg); }
+    .make-list { display:grid; gap:14px; margin:24px 0 0; padding:0; list-style:none; }
+    .make-list li { padding:14px 16px; border-radius:12px; background:#fff; box-shadow:0 2px 0 #e5dcd0; font-size:.93rem; font-weight:800; }
+    .make-list li::before { margin-right:10px; color:var(--pink); content:"●"; }
+    .trial { display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; color:#fff; background:var(--ink); }
+    .trial .eyebrow { color:var(--yellow); }
+    .trial-card { align-self:center; padding:32px; border:4px solid var(--ink); border-radius:24px; color:var(--ink); background:var(--yellow); box-shadow:10px 10px var(--pink); }
+    .trial-card h3 { margin:0 0 12px; font-size:1.25rem; }
+    .trial-card p { margin:0; font-weight:700; line-height:1.8; }
+    .trial-card .button { margin-top:20px; background:var(--ink); box-shadow:0 5px #0b123e; }
+    .foot { padding:27px 4%; color:#fff; background:#10183e; font-size:.72rem; }
+    .js .reveal { opacity:0; transform:translateY(28px); transition:opacity .65s ease, transform .65s cubic-bezier(.2,.8,.2,1); }
+    .js .reveal.is-visible { opacity:1; transform:none; }
+    .js .hero-copy .tag { animation:rise .55s .1s both; }
+    .js h1 span { animation:rise .65s both; }
+    .js h1 span:last-child { animation-delay:.12s; }
+    .js .hero-copy > p:last-of-type, .js .hero-copy .button { animation:rise .6s .27s both; }
+    .js .hero-photo { animation:photo-in .8s .18s both; }
+    @keyframes rise { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+    @keyframes photo-in { from { opacity:0; transform:translate(25px, 24px) rotate(5deg); } to { opacity:1; transform:none; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } .js .reveal { opacity:1; transform:none; } }
+    @media (max-width:760px) { .head { width:calc(100% - 36px); } .head > .button, .nav { display:none; } .hero-grid, .intro, .gallery, .make, .trial { grid-template-columns:1fr; } .hero-grid { gap:18px; min-height:auto; padding-top:120px; } .hero-copy { padding:0; } h1 { font-size:clamp(2.5rem, 9.2vw, 3.6rem); } .hero-copy > p:last-of-type { font-size:.92rem; } .hero-photo { margin:20px 0 46px; } .hero-photo img { max-height:310px; object-fit:cover; } .photo-badge { right:-8px; } .intro, .trial { gap:25px; } .steps { grid-template-columns:1fr; padding:24px 22px 48px; } .step:nth-child(2) { transform:none; } .gallery-copy { padding:70px 22px 38px; } .photo-grid { padding:0 22px 22px; } .photo-grid figure, .photo-grid figure:first-child { min-height:180px; } .make-picture { order:2; } .trial { padding:74px 22px; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="head">
+    <a class="brand" href="#top">ひらめきコードクラブ</a>
+    <nav class="nav" aria-label="主なメニュー"><a href="#about">どんな教室？</a><a href="#learn">できること</a><a href="#trial">体験会</a></nav>
+    <a class="button" href="#trial">体験会へ</a>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="tag">小学1年生 — 6年生</p>
+          <h1><span>「できた！」が</span><span>どんどんふえる。</span></h1>
+          <p>ゲーム、アニメーション、ロボット。好きなことから始めて、考えて、つくって、試してみる。放課後のプログラミング教室です。</p>
+          <a class="button" href="#trial">はじめての体験会へ</a>
+        </div>
+        <figure class="hero-photo"><img src="./assets/coding-school/img/kids-coding-school-hero.png" alt="ロボットカーを手前に、小学生が教室でプログラミングに取り組む様子"><span class="photo-badge">つくって<br>あそぼう！</span></figure>
+      </div>
+    </section>
+    <section class="section intro reveal" id="about">
+      <p class="eyebrow">WHAT WE DO / 01</p>
+      <div><h2>好き！から始まる。<br>考える力。</h2><p class="body">「こうしたい」を自分の言葉で考え、画面の中でためしてみる。正解を急がず、先生や仲間と話しながら、ひとつずつ形にしていきます。</p></div>
+    </section>
+    <section class="steps" id="learn" aria-label="教室での学び方">
+      <article class="step reveal"><div class="step-top"><span class="number">1</span><svg class="step-icon" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-yellow" stroke-width="4" d="M21 56V34l29-16 29 16v22L50 73z"/><path class="line" d="M21 34l29 17 29-17M50 51v22"/><path class="accent" stroke-width="4" d="M72 69l5 10 10 5-10 5-5 10-5-10-10-5 10-5z"/></svg></div><h3>つくってみる</h3><p>ゲームやアニメーションを、自分のアイデアから組み立てます。</p></article>
+      <article class="step reveal"><div class="step-top"><span class="number">2</span><svg class="step-icon" viewBox="0 0 100 100" aria-hidden="true"><path class="accent" stroke-width="4" d="M25 28h50v36H25z"/><path class="line" d="M40 78h20M50 64v14M37 42h6m14 0h6M38 52c7 7 17 7 24 0"/><path class="fill-yellow" stroke-width="4" d="M17 32l10 5-10 6z"/></svg></div><h3>ためしてみる</h3><p>うまくいかなければ、直してもう一度。失敗も発見のひとつです。</p></article>
+      <article class="step reveal"><div class="step-top"><span class="number">3</span><svg class="step-icon" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-yellow" stroke-width="4" d="M18 28h48v31H39L27 70V59h-9z"/><path class="accent" stroke-width="4" d="M52 52h30v22H68l-9 8v-8h-7z"/><path class="line" d="M30 42h24m4 22h14"/></svg></div><h3>みせてみる</h3><p>できた作品を仲間に見せて、次にやりたいことを見つけます。</p></article>
+    </section>
+    <section class="gallery">
+      <div class="gallery-copy reveal"><p class="eyebrow">AFTER SCHOOL CLUB</p><h2>みんなでやるから、<br>もっとおもしろい。</h2><p>少人数のテーブルを囲んで、ロボットを動かしたり、作品を見せ合ったり。ひらめきが行き交う、放課後の居場所です。</p></div>
+      <div class="photo-grid reveal"><figure><img src="./assets/coding-school/img/kids-coding-school-learning.png" alt="二人の子どもが先生とロボットを囲んで学ぶ様子"></figure><figure><img src="./assets/coding-school/img/kids-coding-school-achievement.png" alt="子どもが自分でつくった小さなロボットを見つめる様子"></figure><figure><img src="./assets/coding-school/img/kids-coding-school-notes.png" alt="ロボットとカラフルなプログラミングカード、クレヨンが並ぶ机"></figure></div>
+    </section>
+    <section class="section make reveal">
+      <figure class="make-picture"><img src="./assets/coding-school/img/kids-coding-school-notes.png" alt="カラフルなプログラミングカードとロボットの教材"><figcaption>手を動かして、考えよう。</figcaption></figure>
+      <div><p class="eyebrow">MAKE &amp; PLAY / 02</p><h2>画面の外にも、<br>ワクワクを。</h2><ul class="make-list"><li>はじめてでも扱いやすいビジュアル教材</li><li>ロボットを動かす、手ざわりのある課題</li><li>作品を持ち帰って家族に見せる時間</li></ul></div>
+    </section>
+    <section class="section trial" id="trial">
+      <div class="reveal"><p class="eyebrow">TRIAL CLASS / 03</p><h2>まずは一度、<br>やってみよう</h2></div>
+      <div class="trial-card reveal"><h3 id="trial-date">土曜日 10:30 —</h3><p id="trial-copy">体験会の空きを確認しています。</p><a class="button" href="mailto:hello@example.com?subject=体験会について">体験会に申し込む</a></div>
+    </section>
+  </main>
+  <footer class="foot">© HIRAMEKI CODE CLUB　—　Sakura Forge Systems</footer>
+  <script>
+    const dates = ['土曜日 10:30 —', '水曜日 16:30 —', '日曜日 13:00 —'];
+    const remaining = 1 + Math.floor(Math.random() * 5);
+    document.querySelector('#trial-date').textContent = dates[Math.floor(Math.random() * dates.length)];
+    document.querySelector('#trial-copy').textContent = `あと ${remaining} 人で満席です。保護者の方も一緒に見学できます。`;
+    const reveals = document.querySelectorAll('.reveal');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); obs.unobserve(entry.target); } }), { threshold:.13 });
+      reveals.forEach((item) => observer.observe(item));
+    } else { reveals.forEach((item) => item.classList.add('is-visible')); }
+  </script>
+</body>
+</html>
