@@ -259,13 +259,15 @@ html[data-locale="hi"] .eyebrow, html[data-locale="hi"] .section-tag { letter-sp
 .contact-petal::after { content: ""; position: absolute; inset: 45px; border: 1px solid rgba(232,138,156,.12); border-radius: inherit; }
 
 .footer { width: 100%; color: var(--ink); background: var(--steel); border-top: 1px solid rgba(17,37,44,.16); }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 36px; min-height: 92px; padding-block: 24px; font-size: 10px; }
+.footer-inner { display: grid; grid-template-columns: minmax(220px, .62fr) minmax(0, 1.38fr); gap: clamp(36px, 7vw, 92px); padding-block: 32px; font-size: 10px; }
+.footer-identity { display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 28px; }
 .footer-brand img { width: min(240px, 42vw); }
-.footer-meta { display: flex; align-items: center; justify-content: flex-end; gap: clamp(18px, 3vw, 36px); min-width: 0; }
-.footer-status { display: inline-flex; align-items: center; color: #52666a; line-height: 1.5; }
-.footer-status .status-dot { display: inline-block; width: 6px; height: 6px; margin-right: 6px; border-radius: 50%; background: var(--copper); }
-.footer-status [data-i18n] { min-width: 0; }
-.footer p { margin: 0; color: #65777a; white-space: nowrap; }
+.footer-identity > p { margin: 0; color: #65777a; line-height: 1.5; }
+.company-profile dl { margin: 0; }
+.company-profile dl > div { display: grid; grid-template-columns: 84px 1fr; gap: 20px; padding: 11px 0; border-top: 1px solid rgba(17,37,44,.14); }
+.company-profile dl > div:last-child { border-bottom: 1px solid rgba(17,37,44,.14); }
+.company-profile dt { color: var(--copper); font-family: monospace; font-size: 9px; font-weight: 700; letter-spacing: .08em; }
+.company-profile dd { margin: 0; color: #4c6064; font-size: 11px; line-height: 1.65; }
 
 @keyframes ember { 0%, 100% { opacity: .2; transform: translate(0, 8px); } 50% { opacity: 1; transform: translate(8px, -16px); } }
 @keyframes pulse { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
@@ -344,8 +346,9 @@ html[data-locale="hi"] .eyebrow, html[data-locale="hi"] .section-tag { letter-sp
   .mock-body { min-height: 250px; padding: 25px; }
   .mock-nav { margin-bottom: 50px; }
   .mock-photo span { width: 45px; }
-  .footer-inner { align-items: flex-start; flex-direction: column; gap: 16px; min-height: 0; padding-block: 22px; }
-  .footer-meta { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; padding-block: 26px; }
+  .footer-identity { gap: 14px; }
+  .company-profile dl > div { grid-template-columns: 76px 1fr; gap: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
